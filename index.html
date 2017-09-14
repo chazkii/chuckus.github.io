@@ -1,1043 +1,382 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<!-- Define Charset -->
-	<meta charset="utf-8"/>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+		<link rel="shortcut icon" href="images/favicon.png">
+	    <title>Charlie Smith - Python Developer</title>
 
-	<!-- Page Title -->
-	<title>ProResume - Pro Professional vCard Resume Theme</title>
+	    <!-- Bootstrap core CSS -->
+	    <link href="css/bootstrap.css" rel="stylesheet">
+	    <link rel="stylesheet" href="css/flexslider.css"> <!-- Flexslider -->
+	    <!--Style-->
+	    <link href="css/style.css" type="text/css" rel="stylesheet">
 
-	<!-- Responsive Metatag -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	    <!--Responsive CSS-->
+	    <link href="css/responsive.css" type="text/css" rel="stylesheet">
+	    
+		<!-- Icon Font-->
+	    <link href="css/font-awesome/css/font-awesome.css" rel="stylesheet">
 
-	<!-- <meta http-equiv="X-UA-Compatible" content="IE=9" />-->
+	    <!-- Fancybox -->
+	    <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css"/>
+	    <link rel="stylesheet" href="fancybox/helpers/jquery.fancybox-buttons.css" type="text/css"/>
+	    <link rel="stylesheet" href="fancybox/helpers/jquery.fancybox-thumbs.css" type="text/css"/> 
+	</head>
 
-	<!-- CSS -->
-	<link rel="stylesheet" href="css/vendors/bootstrap.min.css">
+	<div id="overlayloader">
+	    <div id="progstatloader"></div>
+	    <div id="progressloader"></div>
+	</div>
 
-	<!-- Font icons -->
-	<link rel="stylesheet" href="css/vendors/fontello.css" >
-	<!--[if IE 7]>
-	<link rel="stylesheet" href="css/fontello-ie7.css" ><![endif]-->
-
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="js/vendors/owl-carousel/owl.carousel.css">
-	<link rel="stylesheet" href="js/vendors/owl-carousel/owl.theme.css">
-
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/vendors/animate.css">
-
-	<!-- Custom CSS -->
-	<link rel="stylesheet" href="css/styles.css" />
-	<!-- Custom Media-Queties -->
-	<link rel="stylesheet" href="css/media-queries.css" />
-
-	<!-- Player -->
-	<link rel="stylesheet" href="css/YTPlayer.css" >
-
-	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-	<!-- Media queries -->
-	<!--[if lt IE 9]>
-		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-	<![endif]-->
-</head>
-
+	<!-- hijacking: on/off - animation: rotate -->
 	<body>
-		<div id="preloader">
-			<div class="preloader"><img src="img/progress.gif" alt=""></div>
-		</div>
-		<!-- begin Header -->
-		<header>
+		<!-- Fixed navbar -->
+		<nav id="mainnav" class="navbar navbar-default">
+			<!--<span class="custom-close"></span>
+			<span class="custom-show"></span>-->
+			<div class="navbody">
+				<ul class="nav nav-logo">
+					<li class="nav-logo-slot"><a class="logo_img" href="index.html"><span></span></a></li>
+				</ul>
 
-		<nav class="navbar" role="navigation">
-			<div class="container">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#"><img src="img/logo.png" alt="//"></a>
-				</div>
-
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse">
-
-					<ul class="nav navbar-nav menu-effect">
-						<li class="active"><a href="#menu_home">Home</a></li>
-						<li><a href="#menu_features">My Skills</a></li>
-						<li><a href="#menu_rec">Recommendation</a></li>
-						<li><a href="#menu_works">Works</a></li>
-						<li><a href="#menu_contact">Contact</a></li>
-
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle exclude" data-toggle="dropdown">Social Media <span class="caret"></span></a>
-							<form class="dropdown-menu form-login" role="form">
-								<a class="btn btn-social twitter" href="#"><i class="icon-twitter"></i>Twitter Login</a>
-								<a class="btn btn-social facebook" href="#"><i class="icon-facebook"></i>Facebook Login</a>
-								<a class="btn btn-social gplus" href="#"><i class="icon-gplus"></i>Gplus Login</a>
-
-							</form>
-						</li>
-
-					</ul>
-				</div><!--/.nav-collapse -->
+				<ul class="nav navbar-nav">
+					<li class="tooltip"><a class="page-scroll" href="#about"><i class="fa fa-info"></i> <span class="tooltiptext tooltip-right">About</span></a></li>
+				</ul>
 			</div>
 		</nav>
 
-		</header>
-		<!-- end Header -->
 
 
-
-		<!-- begin Content -->
-		<section>
-
-			<article class="home bg" id="menu_home">
-				<div id="slider-home" class="carousel slide animated" data-animation="fadeInDown" data-animation-delay="200" data-ride="carousel">
-
-					<!-- Wrapper for slides -->
-					<div class="carousel-inner">
-						<div class="item active">
-							<h2 class="animated" data-animation="fadeInDownBig" data-animation-delay="200">ProResume Landing Page <br />something you love</h2>
-							<h5 class="animated" data-animation="fadeInUpBig" data-animation-delay="200">It's easy when you're doingsomething you love.</h5>
-							<a href="demo.pdf" download="demo.pdf"><button class="button button--naira animated" data-animation="flipInY" data-animation-delay="500"><i class="button__icon icon icon-download"></i><span><i class="icon-download"></i> Download Resume</span></button></a>
-						</div>
-						<div class="item">
-							<h2 class="animated" data-animation="fadeInDownBig" data-animation-delay="200">ProResume Landing Page <br />something you love</h2>
-							<h5 class="animated" data-animation="fadeInUpBig" data-animation-delay="200">It's easy when you're doingsomething you love.</h5>
-							<a href="demo.pdf" download="demo.pdf"><button class="button button--naira animated" data-animation="flipInY" data-animation-delay="500"><i class="button__icon icon icon-download"></i><span><i class="icon-download"></i> Download Resume</span></button></a>
-						</div>
-
-						</div>
-					</div>
-
-					<!-- Controls -->
-					<a class="left carousel-control" href="#slider-home" data-slide="prev">
-						<i class="icon-left-open-big"></i>
-					</a>
-					<a class="right carousel-control" href="#slider-home" data-slide="next">
-						<i class="icon-right-open-big"></i>
-					</a>
-				</div>
-			</article>
-
-			<article class="features" id="menu_features">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6">
-							<h2 class="animated" data-animation="fadeInUp" data-animation-delay="200">SKILLS &amp; EXPERTISE</h2>
-							<h6 class="animated" data-animation="fadeInUp" data-animation-delay="400">Visual Designer. Front-end Developer. C# Programmer.</h6>
-							<figure class="phone animated" data-animation="fadeInLeft" data-animation-delay="200">
-								<img src="img/profile.png" alt="//">
-							</figure>
-						</div>
-						<div class="col-md-6">
+		<div class="main-content">
+				<section class="section" id="about">
+					<div class="container">
+						<div class="theme-header header-content">
 							<div class="row">
-								<div class="col-sm-6 col-xs-6">
-									<div class="features-item animated" data-animation="fadeInDown" data-animation-delay="200">
-										<a class="icon" href="#"><i class="icon-lamp"></i></a>
-										<h4>Branding</h4>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, provident.</p>
-									</div>
-								</div>
-								<div class="col-sm-6 col-xs-6">
-									<div class="features-item animated" data-animation="fadeInDown" data-animation-delay="400">
-										<a class="icon" href="#"><i class="icon-monitor"></i></a>
-										<h4>Marketing</h4>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, provident.</p>
-									</div>
-								</div>
-								<div class="col-sm-6 col-xs-6">
-									<div class="features-item animated" data-animation="fadeInDown" data-animation-delay="600">
-										<a class="icon" href="#"><i class="icon-brush"></i></a>
-										<h4>Desing</h4>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, provident.</p>
-									</div>
-								</div>
-								<div class="col-sm-6 col-xs-6">
-									<div class="features-item animated" data-animation="fadeInDown" data-animation-delay="800">
-										<a class="icon" href="#"><i class="icon-code"></i></a>
-										<h4>Programming</h4>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, provident.</p>
-									</div>
-								</div>
-							</div>
-							<div class="clearfix"></div>
-
-							<h3 class="animated" data-animation="fadeInUp" data-animation-delay="400">
-								<strong>Smart Digital Solutions</strong> A Front-End Developer Based in London
-							</h3>
-							<figure class="device animated" data-animation="slideInRight" data-animation-delay="200">
-								<a href="#" data-original-title="Iphone Ipad Ebooks"><img src="img/device01.png" alt="//"></a>
-							</figure>
-							<figure class="device animated" data-animation="slideInRight" data-animation-delay="400">
-								<a href="#" data-original-title="Desktop Ebooks"><img src="img/device02.png" alt="//"></a>
-							</figure>
-							<figure class="device animated" data-animation="slideInRight" data-animation-delay="600">
-								<a href="#" data-original-title="Android Ebooks"><img src="img/device03.png" alt="//"></a>
-							</figure>
-						</div>
-					</div>
-				</div>
-			</article>
-
-			<article class="experience" id="#">
-				<div class="container">
-
-					<h2 class="animated" data-animation="fadeInUp" data-animation-delay="200">Work experience</h2>
-					<h6 class="animated" data-animation="fadeInUp" data-animation-delay="400">I'm looking to expand my portfolio while I'm on top and while I'm young. Johnny doe brings your content to  life in stunning clarity</h6>
-
-					<div class="row cv-section">
-	                    <div class="col-md-3">
-	                        <div class="cv-section-title animated" data-animation="fadeInLeft" data-animation-delay="200">
-
-	                            <h1>
-	                            	<span>
-	                                	2016
-	                                    <small>January</small>
-	                                </span>
-	                                -
-	                                <span>Present</span>
-	                            </h1>
-
-
-	                            <h3>Graphic Corner</h3>
-
-	                            <p>
-	                            	2013 - 2014 Senior Graphic Designer <br>
-	                            	2014 - 2015 Project Manager
-	                            </p>
-
-	                        </div>
-	                    </div>
-	                    <div class="col-md-9">
-	                        <div class="cv-item animated" data-animation="fadeInRight" data-animation-delay="200">
-
-	                            <h3>Job Description</h3>
-
-	                            <p>
-	                            	Senior Graphic Designer<br>
-									Phasellus nec gravida purus. Aliquam ac enim vel ipsum consectetur vulputate. Duis quis feugiat neque.
-	                                Pellentesque eleifend, nisi vel mattis vestibulum, est lacus pretium quam, ut faucibus lorem mi a lacus.
-	                                Nulla luctus, urna eu congue pellentesque, sapien arcu interdum lorem.
-	                            </p>
-
-	                            <p>
-	                            	Art Director<br>
-									Donec mollis venenatis pulvinar. Mauris leo odio, euismod at tellus ac, tincidunt vulputate velit. Aenean
-	                                eget tortor feugiat, facilisis arcu a, commodo felis. Fusce imperdiet nisl urna, quis elementum sapien
-	                                hendrerit sollicitudin. Maecenas porttitor ultrices erat in ornare.  Fusce imperdiet nisl urna, quis
-	                                elementum sapien hendrerit sollicitudin. Maecenas porttitor ultrices erat in ornare.
-	                            </p>
-
-	                        </div>
-	                    </div>
-                    </div>
-
-                    <div class="row cv-section">
-	                    <div class="col-md-3">
-	                        <div class="cv-section-title animated" data-animation="fadeInLeft" data-animation-delay="200">
-
-	                            <h1>
-	                            	<span>
-	                                	2005
-	                                    <small>March</small>
-	                                </span>
-	                                -
-	                                <span>
-	                                	2006
-	                                    <small>February</small>
-	                                </span>
-	                            </h1>
-
-
-	                            <h3>Creative Media</h3>
-
-	                            <p>Junior Graphic Designer</p>
-
-	                        </div>
-	                    </div>
-	                    <div class="col-md-9">
-	                        <div class="cv-item animated" data-animation="fadeInRight" data-animation-delay="200">
-
-	                            <h3>Job Description</h3>
-
-	                            <p>
-	                            	Curabitur gravida pharetra augue sit amet tincidunt. Morbi a mi elementum, vehicula felis nec, commodo risus. Aliquam congue dignissim tempus. Nullam pharetra urna facilisis tellus vulputate, ac vehicula quam tempus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec sollicitudin, erat et consectetur tristique, eros nulla dapibus felis, nec convallis sapien odio vitae mi. Cras vel odio turpis. Cras dignissim adipiscing leo quis sagittis. Aenean vitae turpis lectus. Suspendisse porttitor vulputate scelerisque.
-	                            </p>
-
-	                        </div>
-	                    </div>
-                    </div>
-
-                    <div class="row cv-section">
-	                    <div class="col-md-3">
-	                        <div class="cv-section-title animated" data-animation="fadeInLeft" data-animation-delay="200">
-	                            <h1>
-	                            	<span>
-	                                	2006
-	                                    <small>March</small>
-	                                </span>
-	                                -
-	                                <span>
-	                                	2010
-	                                    <small>July</small>
-	                                </span>
-	                            </h1>
-
-	                            <h3>Creatika Agency</h3>
-
-	                            <p>
-	                            	2006 - 2008 Senior Graphic Designer <br>
-	                            	2008 - 2010 Project Manager
-	                            </p>
-
-	                        </div>
-	                    </div>
-	                    <div class="col-md-9">
-	                        <div class="cv-item animated" data-animation="fadeInRight" data-animation-delay="200">
-
-	                            <h3>Job Description</h3>
-
-	                            <p>
-	                            	Senior Graphic Designer<br>
-									Phasellus nec gravida purus. Aliquam ac enim vel ipsum consectetur vulputate. Duis quis feugiat neque.
-	                                Pellentesque eleifend, nisi vel mattis vestibulum, est lacus pretium quam, ut faucibus lorem mi a lacus.
-	                                Nulla luctus, urna eu congue pellentesque, sapien arcu interdum lorem.
-	                            </p>
-
-	                            <p>
-	                            	Art Director<br>
-									Donec mollis venenatis pulvinar. Mauris leo odio, euismod at tellus ac, tincidunt vulputate velit. Aenean
-	                                eget tortor feugiat, facilisis arcu a, commodo felis. Fusce imperdiet nisl urna, quis elementum sapien
-	                                hendrerit sollicitudin. Maecenas porttitor ultrices erat in ornare.  Fusce imperdiet nisl urna, quis
-	                                elementum sapien hendrerit sollicitudin. Maecenas porttitor ultrices erat in ornare.
-	                            </p>
-
-	                        </div>
-	                    </div>
-                    </div>
-				</div>
-			</article>
-
-			<article class="education" id="#">
-				<div class="container">
-
-					<h2 class="animated" data-animation="fadeInUp" data-animation-delay="200">Education</h2>
-					<h6 class="animated" data-animation="fadeInUp" data-animation-delay="400">I'm looking to expand my portfolio while I'm on top and while I'm young. Johnny doe brings your content to  life in stunning clarity</h6>
-
-					<div class="row cv-section">
-	                    <div class="col-md-3">
-	                        <div class="cv-section-title animated" data-animation="fadeInLeft" data-animation-delay="200">
-	                            <h1>
-	                            	<span>
-	                                	2004
-	                                    <small>September</small>
-	                                </span>
-	                                -
-	                                <span>
-	                                	2008
-	                                    <small>June</small>
-	                                </span>
-	                            </h1>
-
-	                            <h3>New York State Univerity</h3>
-
-	                            <p>Advance Graphic Designer</p>
-
-	                            <h3>3.9 GPA</h3>
-
-	                        </div>
-	                    </div>
-	                    <div class="col-md-9">
-	                        <div class="cv-item animated" data-animation="fadeInRight" data-animation-delay="200">
-
-	                            <h3>School Profile Description</h3>
-
-	                            <p>
-	                            	Phasellus nec gravida purus. Aliquam ac enim vel ipsum consectetur vulputate. Duis quis feugiat neque. Pellentesque eleifend, nisi vel mattis vestibulum, est lacus pretium quam, ut faucibus lorem mi a lacus. Nulla luctus, urna eu congue pellentesque, sapien arcu interdum lorem, eu mollis nisi nunc in nulla. Donec mollis venenatis pulvinar. Mauris leo odio, euismod at tellus ac, tincidunt vulputate velit. Aenean eget tortor feugiat, facilisis arcu a, commodo felis. Fusce imperdiet nisl urna, quis elementum sapien hendrerit sollicitudin. Maecenas porttitor ultrices erat in ornare. Suspendisse potenti. Fusce interdum commodo velit non vestibulum. Aenean ut porttitor sapien, vitae mattis felis. Etiam quis tellus id lectus laoreet interdum.
-	                            </p>
-
-	                        </div>
-	                    </div>
-                    </div>
-
-                    <div class="row cv-section">
-	                    <div class="col-md-3">
-	                        <div class="cv-section-title animated" data-animation="fadeInLeft" data-animation-delay="200">
-	                            <h1>
-	                            	<span>
-	                                	2000
-	                                    <small>September</small>
-	                                </span>
-	                                -
-	                                <span>
-	                                	2004
-	                                    <small>June</small>
-	                                </span>
-	                            </h1>
-
-
-	                            <h3>School of the Arts</h3>
-
-	                            <p>Visaul Arr &amp; Design</p>
-
-	                        </div>
-	                    </div>
-	                    <div class="col-md-9">
-	                        <div class="cv-item animated" data-animation="fadeInRight" data-animation-delay="200">
-
-	                            <h3>School Profile Description</h3>
-
-	                            <p>
-	                            	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae sem laoreet, mattis arcu at, lacinia ligula. Praesent bibendum eros ut nulla adipiscing, tempus tincidunt tellus scelerisque. Quisque quis laoreet lacus. Praesent laoreet nulla elit, et pellentesque ligula fermentum id. Quisque vulputate bibendum rhoncus. Nam vestibulum euismod elementum. Etiam consequat dolor quis libero pulvinar, sit amet viverra turpis imperdiet. Ut vitae sagittis purus. In metus nisi, sollicitudin a ligula a, viverra volutpat turpis.
-	                            </p>
-	                        </div>
-	                    </div>
-                    </div>
-				</div>
-			</article>
-
-			<article class="testimonials" id="menu_rec">
-				<div class="container">
-
-					<div class="row">
-						<div class="col-md-12">
-							<h2 class="animated" data-animation="fadeInUp" data-animation-delay="200">References</h2>
-						</div>
-					</div>
-
-					<div id="carousel-testimonials" class="owl-carousel animated" data-animation="fadeInUp" data-animation-delay="500">
-						<div class="item">
-							<figure>
-								<a href="#"><i class="icon-quote"></i></a>
-								<img src="img/testimonials/testimonial1.jpg" alt="//">
-							</figure>
-							<h3>&quot;As always, great creative thinking for the best solution. Johnny is by far the most professional and knowledgeable provider I worked with. I will hire him again :)&quot;</h3>
-							<h5>Mike Banderoe</h5>
-						</div>
-
-						<div class="item">
-							<figure>
-								<a href="#"><i class="icon-quote"></i></a>
-								<img src="img/testimonials/testimonial2.jpg" alt="//">
-							</figure>
-							<h3>&quot;As always, great creative thinking for the best solution. Johnny is by far the most professional and knowledgeable provider I worked with. I will hire him again :)&quot;</h2>
-							<h5>Neal Doent</h3>
-						</div>
-
-						<div class="item">
-							<figure>
-								<a href="#"><i class="icon-quote"></i></a>
-								<img src="img/testimonials/testimonial3.jpg" alt="//">
-							</figure>
-							<h3>&quot;As always, great creative thinking for the best solution. Johnny is by far the most professional and knowledgeable provider I worked with. I will hire him again :)&quot;</h3>
-							<h5>Peter Parker</h5>
-						</div>
-					</div>
-				</div>
-			</article>
-
-			<article class="premium-tv" id="menu_works">
-				<div class="container">
-
-					<h2 class="animated" data-animation="fadeInUp" data-animation-delay="200">My latest work</h2>
-					<h6 class="animated" data-animation="fadeInUp" data-animation-delay="400">I'm looking to expand my portfolio while I'm on top and while I'm young. Johnny doe brings your content to  life in stunning clarity</h6>
-
-					<div class="filters">
-						<a href="#" class="btn btn-filter active animated" data-animation="bounceIn" data-animation-delay="200" data-filter="*">Show All</a>
-						<a href="#" class="btn btn-filter animated" data-animation="bounceIn" data-animation-delay="300" data-filter=".iphone">Iphone</a>
-						<a href="#" class="btn btn-filter animated" data-animation="bounceIn" data-animation-delay="400" data-filter=".android">Android</a>
-						<a href="#" class="btn btn-filter animated" data-animation="bounceIn" data-animation-delay="500" data-filter=".ipad">Ipad</a>
-						<a href="#" class="btn btn-filter animated" data-animation="bounceIn" data-animation-delay="600" data-filter=".iwatch">Iwatch</a>
-					</div>
-
-					<div class="premium-tv-grid">
-						<div class="premium-tv-item iphone android">
-							<figure class="item-thumbnail">
-								<img src="img/app/program01.jpg" alt="//">
-								<span class="overthumb"></span>
-								<div class="icons"><a href="#register_modal" data-toggle="modal"><i class="icon-plus"></i></a></div>
-							</figure>
-							<h3>App title 01</h3>
-							<p>Iphone</p>
-						</div>
-
-						<div class="premium-tv-item ipad">
-							<figure class="item-thumbnail">
-								<img src="img/app/program02.jpg" alt="//">
-								<span class="overthumb"></span>
-								<div class="icons"><a href="#register_modal" data-toggle="modal"><i class="icon-plus"></i></a></div>
-							</figure>
-							<h3>App title 02</h3>
-							<p>Android</p>
-						</div>
-
-						<div class="premium-tv-item iphone">
-							<figure class="item-thumbnail">
-								<img src="img/app/program03.jpg" alt="//">
-								<span class="overthumb"></span>
-								<div class="icons"><a href="#register_modal" data-toggle="modal"><i class="icon-plus"></i></a></div>
-							</figure>
-							<h3>App title 03</h3>
-							<p>Ipad</p>
-						</div>
-
-						<div class="premium-tv-item android iwatch">
-							<figure class="item-thumbnail">
-								<img src="img/app/program04.jpg" alt="//">
-								<span class="overthumb"></span>
-								<div class="icons"><a href="#register_modal" data-toggle="modal"><i class="icon-plus"></i></a></div>
-							</figure>
-							<h3>App title 04</h3>
-							<p>Iwatch</p>
-						</div>
-
-						<div class="premium-tv-item iphone">
-							<figure class="item-thumbnail">
-								<img src="img/app/program05.jpg" alt="//">
-								<span class="overthumb"></span>
-								<div class="icons"><a href="#register_modal" data-toggle="modal"><i class="icon-plus"></i></a></div>
-							</figure>
-							<h3>App title 05</h3>
-							<p>Iphone</p>
-						</div>
-
-						<div class="premium-tv-item android ipad">
-							<figure class="item-thumbnail">
-								<img src="img/app/program06.jpg" alt="//">
-								<span class="overthumb"></span>
-								<div class="icons"><a href="#register_modal" data-toggle="modal"><i class="icon-plus"></i></a></div>
-							</figure>
-							<h3>App title 06</h3>
-							<p>Android</p>
-						</div>
-
-						<div class="premium-tv-item android">
-							<figure class="item-thumbnail">
-								<img src="img/app/program07.jpg" alt="//">
-								<span class="overthumb"></span>
-								<div class="icons"><a href="#register_modal" data-toggle="modal"><i class="icon-plus"></i></a></div>
-							</figure>
-							<h3>App title 07</h3>
-							<p>Ipad</p>
-						</div>
-
-						<div class="premium-tv-item ipad iphone">
-							<figure class="item-thumbnail">
-								<img src="img/app/program08.jpg" alt="//">
-								<span class="overthumb"></span>
-								<div class="icons"><a href="#register_modal" data-toggle="modal"><i class="icon-plus"></i></a></div>
-							</figure>
-							<h3>App title 08</h3>
-							<p>Iwatch</p>
-						</div>
-
-						<div class="premium-tv-item android ipad">
-							<figure class="item-thumbnail">
-								<img src="img/app/program09.jpg" alt="//">
-								<span class="overthumb"></span>
-								<div class="icons"><a href="#register_modal" data-toggle="modal"><i class="icon-plus"></i></a></div>
-							</figure>
-							<h3>App title 09</h3>
-							<p>Iphone</p>
-						</div>
-					</div>
-
-				</div>
-			</article>
-
-			<article class="knowledge" id="skills">
-				<div class="container">
-
-					<h2 class="animated" data-animation="fadeInUp" data-animation-delay="200">Skills & Knowledge</h2>
-					<h6 class="animated" data-animation="fadeInUp" data-animation-delay="400">I'm looking to expand my portfolio while I'm on top and while I'm young. Johnny doe brings your content to  life in stunning clarity</h6>
-
-					<div class="row">
-	                	<div class="col-md-7">
-	                        <h3 class="text-uppercase animated" data-animation="fadeInUp" data-animation-delay="200">Software</h3>
-
-	                       <div class="horizontal-bar animated" data-animation="fadeInUp" data-animation-delay="400">
-								<p>Photoshop</p>
-								<div class="content-bar">
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" style="width: 86%;">
-											<span>86%</span>
-										</div>
-									</div>
-								</div>
-
-								<p>Corel Draw</p>
-								<div class="content-bar">
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100" style="width: 73%;">
-											<span>73%</span>
-										</div>
-									</div>
-								</div>
-
-								<p>Adobe Illustrator</p>
-								<div class="content-bar">
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100" style="width: 79%;">
-											<span>79%</span>
-										</div>
-									</div>
-								</div>
-
-								<p>Adobe InDesign</p>
-								<div class="content-bar">
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100" style="width: 57%;">
-											<span>57%</span>
-										</div>
-									</div>
-								</div>
-
-								<p>Cinema 4D</p>
-								<div class="content-bar">
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" style="width: 33%;">
-											<span>33%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-	                    </div>
-	                    <div class="col-md-5">
-
-	                        <h3 class="text-uppercase animated" data-animation="fadeInUp" data-animation-delay="200">Recognitions</h3>
-
-	                        <div class="icon-box-1 animated" data-animation="fadeInUp" data-animation-delay="200">
-
-	                            <i class="icon-picture"></i>
-
-	                            <div class="icon-box-content">
-
-	                                <h4>International Design Awards 2014</h4>
-
-	                                <p>
-	                                	15 March 2014 / New York State University<br>
-										Place: 3
-	                                </p>
-
-	                            </div><!-- end .icon-box-content -->
-
-	                        </div><!-- end .icon-box-1 -->
-
-	                        <div class="icon-box-1 animated" data-animation="fadeInUp" data-animation-delay="300">
-
-	                            <i class="icon-pencil"></i>
-
-	                            <div class="icon-box-content">
-
-	                                <h4>Logo Design Contest Cicago 2013</h4>
-
-	                                <p>
-	                                	12 October 2013 / Chicago House of Art<br>
-										Place: 2
-	                                </p>
-
-	                            </div><!-- end .icon-box-content -->
-
-	                        </div><!-- end .icon-box-1 -->
-
-	                        <div class="icon-box-1 animated" data-animation="fadeInUp" data-animation-delay="400">
-
-	                            <i class="icon-briefcase"></i>
-
-	                            <div class="icon-box-content">
-
-	                                <h4>Web Design Contest New York 2013</h4>
-
-	                                <p>
-	                                	12 October 2013 / New York Technology Office<br>
-										Place: 2
-	                                </p>
-
-	                            </div><!-- end .icon-box-content -->
-
-	                        </div><!-- end .icon-box-1 -->
-
-	                    </div>
-                	</div>
-
-                	<div class="row">
-	                	<div class="col-md-7">
-
-	                        <h3 class="text-uppercase animated" data-animation="fadeInUp" data-animation-delay="200">Language Skills</h3>
-
-	                        <div class="row">
-								<div class="col-sm-4 col-xs-4">
-									<div class="pie-chart easyPieChart animated" data-animation="fadeInUp" data-animation-delay="200" data-percent="25">
-										<span class="pie-chart-custom-text">
-	                                    	<span>English</span><br>
-	                                        <span class="hidden-tablet">Experienced</span>
-	                                    </span>
-                                    </div>
-								</div>
-								<div class="col-sm-4 col-xs-4">
-									<div class="pie-chart easyPieChart animated" data-animation="fadeInUp" data-animation-delay="300" data-percent="50">
-										<span class="pie-chart-custom-text">
-	                                    	<span>French</span><br>
-	                                        <span class="hidden-tablet">Advanced</span>
-	                                    </span>
-									</div>
-								</div>
-								<div class="col-sm-4 col-xs-4">
-									<div class="pie-chart easyPieChart animated" data-animation="fadeInUp" data-animation-delay="400" data-percent="75">
-										<span class="pie-chart-custom-text">
-	                                    	<span>German</span><br>
-	                                        <span class="hidden-tablet">Basic</span>
-	                                    </span>
-									</div>
-								</div>
+						    <div class="p_info col-md-4 col-xs-12 text-right">
+								<h3 class="title line f_right"><span>Personal Info</span></h3>
+								<div class="clr"></div>
+							    <ul class="personal-info">
+							        <li><span>Identity:</span> Software Developer </li>
+							        <li><span>E-mail:</span> <a href="mailto:charlie@blacksmithcomputing.co.uk">charlie@blacksmithcomputing.co.uk</a> </li>
+							        <li><span>Phone:</span> +44 74 2838 3229 </li>
+							    </ul>
+							    <ul class="head-social">
+									<li><a href="https://github.com/chuckus#"><i class="fa fa-github"></i></a></li>
+									<li><a href="https://www.linkedin.com/in/chuckus/#"><i class="fa fa-linkedin"></i></a></li>
+								</ul>
 							</div>
 
-	                    </div>
-	                    <div class="col-md-5">
-
-	                        <h3 class="text-uppercase animated" data-animation="fadeInUp" data-animation-delay="200">Knowledge</h3>
-
-	                        <div class="row">
-	                        	<div class="col-md-6 col-xs-6">
-	                                <ul class="check animated" data-animation="fadeInUp" data-animation-delay="400">
-	                                    <li><i class="icon-check"></i>Google Analythics</li>
-	                                    <li><i class="icon-check"></i>Instal and Configure</li>
-	                                    <li><i class="icon-check"></i>E-commerce Platform</li>
-	                                    <li><i class="icon-check"></i>Color theory</li>
-	                                    <li><i class="icon-check"></i>Web Usability</li>
-	                                    <li><i class="icon-check"></i>Grid &amp; Layout</li>
-	                                </ul>
-	                            </div>
-	                            <div class="col-md-6 col-xs-6">
-	                                <ul class="check animated" data-animation="fadeInUp" data-animation-delay="400">
-	                                	<li><i class="icon-check"></i>Photo manipulation</li>
-	                                    <li><i class="icon-check"></i>Digital Painting</li>
-	                                    <li><i class="icon-check"></i>Photo Composition</li>
-	                                    <li><i class="icon-check"></i>Good Tipography</li>
-	                                    <li><i class="icon-check"></i>Portrait Retouching</li>
-	                                    <li><i class="icon-check"></i>Video Editing</li>
-	                                </ul>
-	                            </div>
-	                        </div><!-- end .row -->
-
-	                    </div><!-- end .span6 -->
-	                </div>
-
-					<div class="row">
-	                	<div class="col-md-12">
-
-	                        <h3 class="text-uppercase nimated" data-animation="fadeInUp" data-animation-delay="200">Hobbies &amp; Interests</h3>
-
-	                        <ul class="interests-list animated" data-animation="fadeInUp" data-animation-delay="400">
-	                        	<li>
-	                                <p><i class="icon-air"></i>Sports</p>
-	                                <div class="interest-details">
-	                                    <i class="icon-air"></i>
-	                                    <strong>Sports</strong>
-	                                    <p>Lorem ipsum dolor sit amet, sagittis arcu diam elit. Morbi vitae sem laoreet mattis egestas nunc eget elit.</p>
-	                                </div>
-	                            </li>
-	                            <li>
-	                                <p><i class="icon-camera"></i>Photography</p>
-	                                <div class="interest-details">
-	                                    <i class="icon-camera"></i>
-	                                    <strong>Photography</strong>
-	                                    <p>Praesent bibendum eros ut nulla adipiscing, tempus tincidunt tellus scelerisque quisque quis laoreet lacus.</p>
-	                                </div>
-	                            </li>
-	                            <li>
-	                                <p><i class="icon-newspaper"></i>Marketing</p>
-	                                <div class="interest-details">
-	                                    <i class="icon-newspaper"></i>
-	                                    <strong>Marketing</strong>
-	                                    <p>Praesent laoreet nulla elit, et pellentesque ligula fermentum id. Quisque vulputate bibendum.</p>
-	                                </div>
-	                            </li>
-	                            <li>
-	                                <p><i class="icon-video"></i>Movies</p>
-	                                <div class="interest-details">
-	                                    <i class="icon-video"></i>
-	                                    <strong>Movies</strong>
-	                                    <p>Nam vestibulum euismod elementum. Etiam consequat dolor quis libero pulvinar, sit amet.</p>
-	                                </div>
-	                            </li>
-	                            <li>
-	                                <p><i class="icon-star"></i>Fashion</p>
-	                                <div class="interest-details">
-	                                    <i class="icon-star"></i>
-	                                    <strong>Fashion</strong>
-	                                    <p>Praesent tristique mattis leo, vel lobortis felis. Phasellus purus neque, euismod a pretium pulvinar placerat.</p>
-	                                </div>
-	                            </li>
-	                            <li>
-	                                <p><i class="icon-monitor"></i>Technology</p>
-	                                <div class="interest-details">
-	                                    <i class="icon-monitor"></i>
-	                                    <strong>Technology</strong>
-	                                    <p>Suspendisse dignissim nisi non velit interdum, in condimentum augue varius. Nullam ac eu lacus rhoncus.</p>
-	                                </div>
-	                            </li>
-	                            <li>
-	                                <p><i class="icon-flight"></i>Trave</p>
-	                                <div class="interest-details">
-	                                    <i class="icon-flight"></i>
-	                                    <strong>Travel</strong>
-	                                    <p>Fusce pretium auctor bibendum. Suspendisse rutrum rhoncus purus sed dapibus.</p>
-	                                </div>
-	                            </li>
-	                            <li>
-	                                <p><i class="icon-doc-text"></i>History</p>
-	                                <div class="interest-details">
-	                                    <i class="icon-doc-text"></i>
-	                                    <strong>History</strong>
-	                                    <p>Quisque id sapien sed urna lobortis rutrum eu sed enim. Duis orci velit, pulvinar eu nisl non porta lacus.</p>
-	                                </div>
-	                            </li>
-	                            <li>
-	                                <p><i class="icon-note"></i>Music</p>
-	                                <div class="interest-details">
-	                                    <i class="icon-note"></i>
-	                                    <strong>Music</strong>
-	                                    <p>Curabitur gravida pharetra augue sit amet tincidunt. Morbi a mi elementum, vehicula felis nec commodo.</p>
-	                                </div>
-	                            </li>
-	                        </ul>
-
-	                    </div>
-                	</div>
-
-				</div>
-			</article>
-
-			<article class="numbers" id="youtubevideo">
-
-				<a
-				id="bgndVideo"
-				class="player"
-				data-property="{
-				autoPlay:true,
-				containment:'#youtubevideo',
-				loop:true,
-				mute:true,
-				opacity:1,
-				ratio:16/9,
-				showControls:true,
-				videoURL:'http://youtu.be/OGzR4QLVTK0',
-				showYTLogo:false
-				}">My video</a>
-
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-6 col-sm-3 item animated" data-animation="fadeInUpBig" data-animation-delay="200">
-							<span><i class="icon-trophy"></i></span>
-							<h3>230</h3>
-							<p>Awards Won</p>
-						</div>
-
-						<div class="col-xs-6 col-sm-3 item animated" data-animation="fadeInUpBig" data-animation-delay="400">
-							<span><i class="icon-thumbs-up"></i></span>
-							<h3>4.100</h3>
-							<p>Happy Customers</p>
-						</div>
-
-						<div class="col-xs-6 col-sm-3 item animated" data-animation="fadeInUpBig" data-animation-delay="600">
-							<span><i class="icon-rocket"></i></span>
-							<h3>24</h3>
-							<p>Projects Done</p>
-						</div>
-
-						<div class="col-xs-6 col-sm-3 item animated" data-animation="fadeInUpBig" data-animation-delay="800">
-							<span><i class="icon-camera"></i></span>
-							<h3>424</h3>
-							<p>Photos Made</p>
-						</div>
-					</div>
-				</div>
-			</article>
-
-			<article class="plans" id="menu_customers">
-				<div class="container">
-
-					<div class="row channels" id="menu_clients">
-					<div class="col-md-5">
-						<h2 class="animated text-right" data-animation="fadeInUp" data-animation-delay="200">My customers</h2>
-						<h6 class="animated text-right" data-animation="fadeInUp" data-animation-delay="400">The best books to keep you reading consectetur adipisicing elit. Hic, laborum, reprehenderit, nesciunt sapiente assumenda ab beatae velit ea perspiciatis animi unde officia odit.</h6>
-					</div>
-					<div class="col-md-7">
-						<a class="brands animated" data-animation="rotateInDownRight" data-animation-delay="200" href="#">
-							<img src="img/brands/logo-1.png" alt="//">
-						</a>
-						<a class="brands animated" data-animation="rotateInDownRight" data-animation-delay="300" href="#">
-							<img src="img/brands/logo-2.png" alt="//">
-						</a>
-						<a class="brands animated" data-animation="rotateInDownRight" data-animation-delay="400" href="#">
-							<img src="img/brands/logo-1.png" alt="//">
-						</a>
-						<a class="brands animated" data-animation="rotateInDownRight" data-animation-delay="500" href="#">
-							<img src="img/brands/logo-3.png" alt="//">
-						</a>
-						<a class="brands animated" data-animation="rotateInDownRight" data-animation-delay="600" href="#">
-							<img src="img/brands/logo-4.png" alt="//">
-						</a>
-						<a class="brands animated" data-animation="rotateInDownRight" data-animation-delay="700" href="#">
-							<img src="img/brands/logo-5.png" alt="//">
-						</a>
-					</div>
-					</div>
-				</div>
-			</article>
-
-			<article class="subscribe" id="menu_contact">
-				<div class="container">
-					<h2 class="animated" data-animation="fadeInUp" data-animation-delay="200">CONTACT ME</h2>
-					<h6 class="animated text-center" data-animation="fadeInUp" data-animation-delay="400">Have a project you'd like to discuss?</h6>
-					<span class="divider center animated" data-animation="fadeInUp" data-animation-delay="200"></span>
-					<div class="animated ct-bubble" data-animation="fadeInUp" data-animation-delay="600">
-                        <i class="icon-comment-alt2"></i>
-                    </div>
-					<h2 class="animated name" data-animation="fadeInUp" data-animation-delay="800">Johnny <strong>Doe</strong></h2>
-					<h6 class="animated text-center" data-animation="fadeInUp" data-animation-delay="400">johnnydoe@demo.com</h6>
-					<span class="divider center bottom animated" data-animation="fadeInUp" data-animation-delay="800"></span>
-				</div>
-			</article>
-
-		</section>
-		<!-- end Content -->
-
-
-
-		<!-- Footer -->
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-7 col-lg-8">
-						<nav class="navbar" role="navigation">
-							<ul class="nav navbar-nav menu-effect ">
-								<li class="active"><a href="#menu_home">Home</a></li>
-								<li><a href="#menu_features">My Skills</a></li>
-								<li><a href="#menu_rec">Recommendation</a></li>
-								<li><a href="#menu_customers">Customers</a></li>
-								<li><a href="#menu_works">Works</a></li>
-								<li><a href="#register_modal" data-toggle="modal">Contact Form</a></li>
-							</ul>
-						</nav>
-					</div>
-					<div class="col-md-5 col-lg-4 copy">
-						<ul class="social">
-							<li><a href="#" data-original-title="Flickr" class="animated" data-animation="flipInY" data-animation-delay="200">
-								<i class="icon-flickr"></i>
-							</a></li>
-							<li><a href="#" data-original-title="Vimeo" class="animated" data-animation="flipInY" data-animation-delay="400">
-								<i class="icon-vimeo"></i>
-							</a></li>
-							<li><a href="#" data-original-title="Twitter" class="animated" data-animation="flipInY" data-animation-delay="600">
-								<i class="icon-twitter"></i>
-							</a></li>
-							<li><a href="#" data-original-title="Facebook" class="animated" data-animation="flipInY" data-animation-delay="800">
-								<i class="icon-facebook"></i>
-							</a></li>
-							<li><a href="#" data-original-title="Google +" class="animated" data-animation="flipInY" data-animation-delay="1000">
-								<i class="icon-gplus"></i>
-							</a></li>
-							<li><a href="#" data-original-title="Linkedin" class="animated" data-animation="flipInY" data-animation-delay="1200">
-								<i class="icon-linkedin"></i>
-							</a></li>
-							<li><a href="#" data-original-title="Pinterest" class="animated" data-animation="flipInY" data-animation-delay="1400">
-								<i class="icon-pinterest"></i>
-							</a></li>
-						</ul>
-					</div>
-				</div>
-
-			</div>
-		</footer>
-		<!-- end Footer -->
-
-
-
-		<!-- Modal -->
-		<div class="modal fade" id="register_modal" tabindex="-1" role="dialog" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						<h4 class="modal-title">Have a project you'd like to discuss?</h4>
-					</div>
-					<div class="modal-body">
-						<form role="form" id="register" action="registration.php" method="post" accept-charset="utf-8">
-							<div class="form-group">
-							  <label class="no">Name</label>
-							  <input type="text" class="form-control" placeholder="Enter a valid name" name="name"/>
+							<div class="owner col-md-4 col-xs-12 text-center">
+								<img src="images/pic.jpg" alt="Charlie Smith">
+								<h3 class="title">Charlie Smith</h3>
+								<div id="myCarousel-owner" class="carousel slide">
+							      	<div class="carousel-inner">
+								        <div class="item active">
+								        	<h6>Python Developer contractor</h6>
+								        </div>
+								        <!--<div class="item">
+								        	<h6>Website Developer</h6>
+								        </div>-->
+									</div>
+								</div>
+							
+							    <div class="downloaddiv">
+								  	<ul class="my-download">
+							        	<li><a href="images/CV.pdf" download>Download CV<i class="fa fa-download"></i></a></li>
+							        </ul>
+					    		</div>
 							</div>
-							<div class="form-group">
-							  <label class="no">Email</label>
-							  <input type="email" class="form-control" placeholder="Enter a valid email" name="email"/>
+
+							<div class="col-md-4 col-xs-12 skills">
+							    <h3 class="title line f_left"><span>Skills</span></h3>
+							    <div class="clr"></div>
+									<ul>
+										<li class="pro-bar-container">
+											<div class="progress pro-bar" data-pro-bar-percent="90">
+												<span class="tag">Python 2.7/3 (Django, pandas, celery, asyncio)</span> <span class="percent">90%</span>
+											</div>
+										</li>
+										<li class="pro-bar-container">
+											<div class="progress pro-bar" data-pro-bar-percent="70">
+												<span class="tag">Front-end dev (EmberJS)</span> <span class="percent">70%</span>
+											</div>
+										</li>
+										<li class="pro-bar-container">
+											<div class="progress pro-bar" data-pro-bar-percent="70">
+												<span class="tag">Databases (PostgreSQL, MongoDB)</span> <span class="percent">70%</span>
+											</div>
+										</li>
+										<li class="pro-bar-container">
+											<div class="progress pro-bar" data-pro-bar-percent="70">
+												<span class="tag">Cloud infrastructure (AWS, Azure, docker)</span> <span class="percent">70%</span>
+											</div>
+										</li>
+										<li class="pro-bar-container">
+											<div class="progress pro-bar" data-pro-bar-percent="70">
+												<span class="tag">CI/CD (jenkins, drone)</span> <span class="percent">70%</span>
+											</div>
+										</li>
+									</ul>
+						    </div>
 							</div>
-							<div class="form-group">
-							  <label class="no">Message</label>
-							  <textarea type="text" class="form-control" placeholder="Message" name="phone"></textarea>
+						</div>
+						<div class="profile_desc_content text-center">
+							<div class="profile_desc_text">
+								<p>Experienced Python developer, with over 6 years commercial experience in the telecommunications industry. Author and maintainer of "Scriptible Chrome as a HTTP service" app, <b><a href="https://github.com/chuckus/chromewhip">chromewhip</a></b>.</p>
 							</div>
-							<button type="submit" class="btn btn-default">Send</button>
-						</form>
+						</div>
 					</div>
-				</div>
-			</div>
+				</section>
+
 		</div>
-		<!-- end Modal -->
 
 
-		<!-- ******************************************************************** -->
-		<!-- ************************* Javascript Files ************************* -->
-		<!-- jQuery -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script>window.jQuery || document.write("<script src=\"js/vendors/jquery/jquery-1.9.1.min.js\"")</script>
 
-		<!-- Respond.js media queries for IE8 -->
-		<script src="js/vendors/respond.min.js"></script>
+	    <!--================================================== -->
+	    <!-- Placed at the end of the document so the pages load faster -->
+	    <!-- jQuery Library-->
+	    <script type="text/javascript" src="js/jquery.min.js"></script>
+	    <!-- Bootstrap core JavaScript-->
+	    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-		<!-- Bootstrap-->
-		<script src="js/vendors/bootstrap.min.js" ></script>
+	    <script type="text/javascript" src="js/plugins.js"></script>
 
-		<!-- One Page Scroll -->
-		<script src="js/vendors/jquery/jquery.nav.js" ></script>
-		<script src="js/vendors/jquery/jquery.sticky.js" ></script>
+	    <!-- Back to top -->
+	    <script type="text/javascript" src="js/back-to-top.js"></script>
+	    <!-- Portfolio -->
+	    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	    <script type="text/javascript" src="js/jquery-ui.js"></script>
 
-		<!-- Isotope -->
-		<script src="js/vendors/jquery/jquery.isotope.min.js" ></script>
 
-		<!-- Carousel -->
-		<script src="js/vendors/owl-carousel/owl.carousel.js"></script>
+	    <!--Progressbar-->
+	    <script type="text/javascript" src="js/easing.js"></script>
+	    <script type="text/javascript" src="js/visible.min.js"></script>
+	    <script type="text/javascript" src="js/progressbars.js"></script>
+	    <!--End Progressbar-->
 
-		<!-- Easy Chart -->
-    	<script type="text/javascript" src="js/vendors/jquery/jquery.easy-pie-chart.js" ></script>
+	    <!-- Parallax BG-->
+	    <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
 
-		<!-- Appear -->
-		<script src="js/vendors/jquery/jquery.appear.js" ></script>
 
-		<!-- Placeholder.js -->
-		<!--[if lte IE 9]> <script src="js/vendors/placeholder.js" ></script> <script>Placeholder.init();</script> <![endif]-->
+	    <!-- Portfolio Fancybox-->
+	    <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
+	    <script type="text/javascript" src="fancybox/helpers/jquery.fancybox-buttons.js"></script>
+	    <script type="text/javascript" src="fancybox/helpers/jquery.fancybox-thumbs.js"></script>
+	    <script type="text/javascript" src="fancybox/helpers/jquery.fancybox-media.js"></script>
+	    
+	    <!-- CounterUp-->
+	    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+	    <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+	    
+	    <script type="text/javascript" src="js/jquery.flexslider.min.js"></script> <!-- Flexslider -->
 
-		<!-- Player -->
-		<script src="js/vendors/jquery.mb.YTPlayer.js" ></script>
+	    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	    <!--Theme JS -->
+	    <script type="text/javascript" src="js/custom.js"></script>
+	    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvpnlHRidMIU374bKM5-sx8ruc01OvDjI"></script>
 
-		<!-- Text Rotator -->
-		<script src="js/vendors/jquery.simple-text-rotator.min.js" ></script>
 
-		<!-- Custom -->
-		<script src="js/script.js"  ></script>
+		<script type="text/javascript"> 
+			(function(jQuery) { "use strict";
+    
+			    //set your google maps parameters
 
-		<!-- *********************** End Javascript Files *********************** -->
-		<!-- ******************************************************************** -->
+			    jQuery(document).ready(function(){
+			        var latitude = 41.0546981,
+			            longitude = -74.7694306,
+			            map_zoom = 12;
 
+			        var locations = [
+			            ['<div class="infobox text-center"><h5>Head Office</h5><span>Welcome Our Office</span></div>', latitude, longitude, 2]
+			        ];
+			    
+			        var map = new google.maps.Map(document.getElementById('google-map'), {
+			            zoom: map_zoom,
+			            scrollwheel: false,
+			            navigationControl: true,
+			            mapTypeControl: false,
+			            scaleControl: false,
+			            draggable: true,
+			            styles: [
+			            {
+			        "featureType": "landscape",
+			        "stylers": [
+			            {
+			                "saturation": -100
+			            },
+			            {
+			                "lightness": 65
+			            },
+			            {
+			                "visibility": "on"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "poi",
+			        "stylers": [
+			            {
+			                "saturation": -100
+			            },
+			            {
+			                "lightness": 51
+			            },
+			            {
+			                "visibility": "simplified"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "road.highway",
+			        "stylers": [
+			            {
+			                "saturation": -100
+			            },
+			            {
+			                "visibility": "simplified"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "road.arterial",
+			        "stylers": [
+			            {
+			                "saturation": -100
+			            },
+			            {
+			                "lightness": 30
+			            },
+			            {
+			                "visibility": "on"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "road.local",
+			        "stylers": [
+			            {
+			                "saturation": -100
+			            },
+			            {
+			                "lightness": 40
+			            },
+			            {
+			                "visibility": "on"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "transit",
+			        "stylers": [
+			            {
+			                "saturation": -100
+			            },
+			            {
+			                "visibility": "simplified"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "administrative.province",
+			        "stylers": [
+			            {
+			                "visibility": "off"
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "water",
+			        "elementType": "labels",
+			        "stylers": [
+			            {
+			                "visibility": "on"
+			            },
+			            {
+			                "lightness": -25
+			            },
+			            {
+			                "saturation": -100
+			            }
+			        ]
+			    },
+			    {
+			        "featureType": "water",
+			        "elementType": "geometry",
+			        "stylers": [
+			            {
+			                "hue": "#ffff00"
+			            },
+			            {
+			                "lightness": -25
+			            },
+			            {
+			                "saturation": -97
+			            }
+			        ]
+			    }
+			],
+			            center: new google.maps.LatLng(latitude, longitude),
+			          mapTypeId: google.maps.MapTypeId.ROADMAP
+			        });
+			    
+			        var infowindow = new google.maps.InfoWindow();
+			    
+			        var marker, i;
+			    
+			        for (i = 0; i < locations.length; i++) {  
+			      
+			            marker = new google.maps.Marker({ 
+			                position: new google.maps.LatLng(locations[i][1], locations[i][2]), 
+			                map: map,
+			                icon: 'images/marker.png'
+			            });
+			        
+			          google.maps.event.addListener(marker, 'click', (function(marker, i) {
+			            return function() {
+			              infowindow.setContent(locations[i][0]);
+			              infowindow.open(map, marker);
+			            }
+			          })(marker, i));
+			        }
+			        
+			    });
+
+			})(jQuery);
+		</script>
+
+	    <script>
+        // --------------------------------------------------
+        // Sliding Navigation
+        // --------------------------------------------------
+
+        jQuery(document).ready(function($){
+            'use strict';
+            
+            
+            jQuery(".custom-show").hide();
+            
+            jQuery(".custom-close").click(function(){
+                jQuery(this).hide();
+                jQuery(".custom-show").show();
+                jQuery('#mainnav').animate({'left': '+=112px'},'medium');
+            });
+            
+            jQuery(".custom-show").click(function(){
+                jQuery(this).hide();
+                jQuery(".custom-close").show();
+                jQuery(this).parent().animate({'left': '-=112px'},'medium');
+            });
+
+        });
+
+
+    </script>
 
 	</body>
 </html>
