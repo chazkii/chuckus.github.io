@@ -19,14 +19,14 @@
 
 	    <!--Responsive CSS-->
 	    <link href="css/responsive.css" type="text/css" rel="stylesheet">
-	    
+
 		<!-- Icon Font-->
 	    <link href="css/font-awesome/css/font-awesome.css" rel="stylesheet">
 
 	    <!-- Fancybox -->
 	    <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css"/>
 	    <link rel="stylesheet" href="fancybox/helpers/jquery.fancybox-buttons.css" type="text/css"/>
-	    <link rel="stylesheet" href="fancybox/helpers/jquery.fancybox-thumbs.css" type="text/css"/> 
+	    <link rel="stylesheet" href="fancybox/helpers/jquery.fancybox-thumbs.css" type="text/css"/>
 	</head>
 
 	<div id="overlayloader">
@@ -64,7 +64,6 @@
 							    <ul class="personal-info">
 							        <li><span>Identity:</span> Software Developer </li>
 							        <li><span>E-mail:</span> <a href="mailto:charlie@blacksmithcomputing.co.uk">charlie@blacksmithcomputing.co.uk</a> </li>
-							        <li><span>Phone:</span> +44 74 2838 3229 </li>
 							    </ul>
 							    <ul class="head-social">
 									<li><a href="https://github.com/chuckus#"><i class="fa fa-github"></i></a></li>
@@ -78,14 +77,14 @@
 								<div id="myCarousel-owner" class="carousel slide">
 							      	<div class="carousel-inner">
 								        <div class="item active">
-								        	<h6>Python Developer contractor</h6>
+								        	<h6>Currently: Quantative Developer (contract) at Man AHL</h6>
 								        </div>
 								        <!--<div class="item">
 								        	<h6>Website Developer</h6>
 								        </div>-->
 									</div>
 								</div>
-							
+
 							    <div class="downloaddiv">
 								  	<ul class="my-download">
 							        	<li><a href="images/CV.pdf" download>Download CV<i class="fa fa-download"></i></a></li>
@@ -99,17 +98,18 @@
 									<ul>
 										<li class="pro-bar-container">
 											<div class="progress pro-bar" data-pro-bar-percent="90">
-												<span class="tag">Python 2.7/3 (Django, pandas, celery, asyncio)</span> <span class="percent">90%</span>
+												<span class="tag">Python 2 and 3 (Django, pandas, celery, asyncio)</span> <span class="percent">90%</span>
 											</div>
 										</li>
 										<li class="pro-bar-container">
 											<div class="progress pro-bar" data-pro-bar-percent="70">
-												<span class="tag">Front-end dev (EmberJS)</span> <span class="percent">70%</span>
+												<span class="tag">Front-end dev (Angular, React, EmberJS)</span> <span class="percent">70%</span>
 											</div>
 										</li>
 										<li class="pro-bar-container">
 											<div class="progress pro-bar" data-pro-bar-percent="70">
-												<span class="tag">Databases (PostgreSQL, MongoDB)</span> <span class="percent">70%</span>
+												<span class="tag">Databases (PostgreSQL 9, Oracle 11/12,
+                          MongoDB 3)</span> <span class="percent">70%</span>
 											</div>
 										</li>
 										<li class="pro-bar-container">
@@ -128,7 +128,9 @@
 						</div>
 						<div class="profile_desc_content text-center">
 							<div class="profile_desc_text">
-								<p>Experienced Python developer, with over 6 years commercial experience in the telecommunications industry. Author and maintainer of "Scriptible Chrome as a HTTP service" app, <b><a href="https://github.com/chuckus/chromewhip">chromewhip</a></b>.</p>
+								<p>Experienced Python developer, with over 7 years commercial
+                experience, working in a range of industries from
+                telecommunications to hedge funds. Author and maintainer of "Scriptible Chrome as a HTTP service" app, <b><a href="https://github.com/chuckus/chromewhip">chromewhip</a></b>.</p>
 							</div>
 						</div>
 					</div>
@@ -169,11 +171,11 @@
 	    <script type="text/javascript" src="fancybox/helpers/jquery.fancybox-buttons.js"></script>
 	    <script type="text/javascript" src="fancybox/helpers/jquery.fancybox-thumbs.js"></script>
 	    <script type="text/javascript" src="fancybox/helpers/jquery.fancybox-media.js"></script>
-	    
+
 	    <!-- CounterUp-->
 	    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 	    <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
-	    
+
 	    <script type="text/javascript" src="js/jquery.flexslider.min.js"></script> <!-- Flexslider -->
 
 	    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
@@ -182,9 +184,9 @@
 	    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvpnlHRidMIU374bKM5-sx8ruc01OvDjI"></script>
 
 
-		<script type="text/javascript"> 
+		<script type="text/javascript">
 			(function(jQuery) { "use strict";
-    
+
 			    //set your google maps parameters
 
 			    jQuery(document).ready(function(){
@@ -195,7 +197,7 @@
 			        var locations = [
 			            ['<div class="infobox text-center"><h5>Head Office</h5><span>Welcome Our Office</span></div>', latitude, longitude, 2]
 			        ];
-			    
+
 			        var map = new google.maps.Map(document.getElementById('google-map'), {
 			            zoom: map_zoom,
 			            scrollwheel: false,
@@ -324,19 +326,19 @@
 			            center: new google.maps.LatLng(latitude, longitude),
 			          mapTypeId: google.maps.MapTypeId.ROADMAP
 			        });
-			    
+
 			        var infowindow = new google.maps.InfoWindow();
-			    
+
 			        var marker, i;
-			    
-			        for (i = 0; i < locations.length; i++) {  
-			      
-			            marker = new google.maps.Marker({ 
-			                position: new google.maps.LatLng(locations[i][1], locations[i][2]), 
+
+			        for (i = 0; i < locations.length; i++) {
+
+			            marker = new google.maps.Marker({
+			                position: new google.maps.LatLng(locations[i][1], locations[i][2]),
 			                map: map,
 			                icon: 'images/marker.png'
 			            });
-			        
+
 			          google.maps.event.addListener(marker, 'click', (function(marker, i) {
 			            return function() {
 			              infowindow.setContent(locations[i][0]);
@@ -344,7 +346,7 @@
 			            }
 			          })(marker, i));
 			        }
-			        
+
 			    });
 
 			})(jQuery);
@@ -357,16 +359,16 @@
 
         jQuery(document).ready(function($){
             'use strict';
-            
-            
+
+
             jQuery(".custom-show").hide();
-            
+
             jQuery(".custom-close").click(function(){
                 jQuery(this).hide();
                 jQuery(".custom-show").show();
                 jQuery('#mainnav').animate({'left': '+=112px'},'medium');
             });
-            
+
             jQuery(".custom-show").click(function(){
                 jQuery(this).hide();
                 jQuery(".custom-close").show();
